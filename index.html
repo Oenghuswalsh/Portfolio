@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Load style sheet -->
+    <script
+      src="https://kit.fontawesome.com/4457b7f0a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Yellowtail"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./normalize.css" />
+    <script defer src="./javascript.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="headerBlock">
+        <a href="./index.html">
+          <div class="logo">
+            <p class="logoText">OW</p>
+          </div>
+        </a>
+        <div class="siteTitle">
+          <h1>Oenghus Walsh Wed Developer Portfolio</h1>
+          <nav>
+            <a class="navButton" href="#portfolio">Portfolio Work</a>
+            <a class="navButton" href="#aboutMe">About Me</a>
+            <a class="navButton" href="#contactMe">Contact Me</a>
+          </nav>
+        </div>
+        <div class="socialMedia">
+          <a
+            title="Linkedin"
+            class="socialMediaLink"
+            href="https://www.linkedin.com/feed/"
+            onclick="window.open(this.href,'targetWindow', 'width=600, height=600'); return false;"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin fa-3x"></i
+          ></a>
+          <a
+            title="GitHub"
+            class="socialMediaLink"
+            href="https://github.com/Oenghuswalsh"
+            onclick="window.open(this.href,'targetWindow', 'width=600, height=600', ); return false;"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github fa-3x"></i
+          ></a>
+          <a
+            title="Email"
+            class="socialMediaLink"
+            href="mailto:oenghuswalsh@gmail.com"
+            subject="Connect"
+            body="Hi."
+            target="_blank"
+            onclick="window.open(this.href,'targetWindow', 'width=600, height=600', ); return false;"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-envelope fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <section class="banner"></section>
+    <section class="portfolioWebsites">
+      <header>
+        <h2>Your Portfolio</h2>
+      </header>
+      <main id="projects">
+        <!-- Insert thumbnail images here -->
+      </main>
+    </section>
+    <section class="portfolioApps"></section>
+    <section class="developmentProcess"></section>
+    <section class="aboutMe"></section>
+    <footer></footer>
+  </body>
+</html>
