@@ -1,40 +1,64 @@
-const projects = [
-  {
-    name: "Project 1",
-    image: "projects/project1/thumbnail.jpg",
-    repositoryURL: "https://github.com/yourusername/repo1",
-  },
-  {
-    name: "Project 2",
-    image: "projects/project2/thumbnail.jpg",
-    repositoryURL: "https://oenghuswalsh.github.io/Silly-story-generator/",
-  },
-  // Add more projects
-];
+function openCenteredWindow(url) {
+  // Define the width and height of the popup window.
+  const popupWidth = 900;
+  const popupHeight = 600;
 
-const projectsContainer = document.getElementById("projects");
+  // Calculate the center position based on the screen dimensions.
+  const centerX = window.screenX + (window.innerWidth - popupWidth) / 2;
+  const centerY = window.screenY + (window.innerHeight - popupHeight) / 2;
 
-projects.forEach((project) => {
-  const projectElement = document.createElement("div");
-  projectElement.classList.add("project");
-  projectElement.innerHTML = `<img src="${project.image}" alt="${project.name}">`;
+  // Open the popup window with the calculated position.
+  window.open(
+    url,
+    "_blank",
+    `width=${popupWidth}, height=${popupHeight}, left=${centerX}, top=${centerY}`
+  );
+}
+function openWebsiteWindow(url) {
+  // Define the width and height of the popup window.
+  const popupWidth = 900;
+  const popupHeight = 600;
 
-  projectElement.addEventListener("click", () => {
-    // Define the width and height of the popup window.
-    const popupWidth = 800;
-    const popupHeight = 600;
+  // Calculate the center position based on the screen dimensions.
+  const centerX = window.screenX + (window.innerWidth - popupWidth) / 2;
+  const centerY = window.screenY + (window.innerHeight - popupHeight) / 2;
 
-    // Calculate the center position based on the screen dimensions.
-    const centerX = window.screenX + (window.innerWidth - popupWidth) / 2;
-    const centerY = window.screenY + (window.innerHeight - popupHeight) / 2;
+  // Open the popup window with the calculated position.
+  window.open(
+    url,
+    "_blank",
+    `width=${popupWidth}, height=${popupHeight}, left=${centerX}, top=${centerY}`
+  );
+}
+function openMultiPageWebsiteWindow(url) {
+  // Define the width and height of the popup window.
+  const popupWidth = 450;
+  const popupHeight = 700;
 
-    // Open the popup window with the calculated position.
-    window.open(
-      project.repositoryURL,
-      "_blank",
-      `width=${popupWidth}, height=${popupHeight}, left=${centerX}, top=${centerY}`
-    );
-  });
+  // Calculate the center position based on the screen dimensions.
+  const centerX = window.screenX + (window.innerWidth - popupWidth) / 2;
+  const centerY = window.screenY + (window.innerHeight - popupHeight) / 2;
 
-  projectsContainer.appendChild(projectElement);
-});
+  // Open the popup window with the calculated position.
+  window.open(
+    url,
+    "_blank",
+    `width=${popupWidth}, height=${popupHeight}, left=${centerX}, top=${centerY}`
+  );
+}
+function openAppWindow(url) {
+  // Define the width and height of the popup window.
+  const popupWidth = 600;
+  const popupHeight = 600;
+
+  // Calculate the center position based on the screen dimensions.
+  const centerX = window.screenX + (window.innerWidth - popupWidth) / 2;
+  const centerY = window.screenY + (window.innerHeight - popupHeight) / 2;
+
+  // Open the popup window with the calculated position.
+  window.open(
+    url,
+    "_blank",
+    `width=${popupWidth}, height=${popupHeight}, left=${centerX}, top=${centerY}`
+  );
+}

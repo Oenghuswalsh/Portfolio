@@ -37,47 +37,490 @@
           <a
             title="Linkedin"
             class="socialMediaLink"
-            href="https://www.linkedin.com/feed/"
-            onclick="window.open(this.href,'targetWindow', 'width=600, height=600'); return false;"
+            href="https://www.linkedin.com/in/oenghus-walsh-494b1499"
+            onclick="openCenteredWindow(this.href); return false;"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin fa-3x"></i
-          ></a>
+          >
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
           <a
             title="GitHub"
             class="socialMediaLink"
             href="https://github.com/Oenghuswalsh"
-            onclick="window.open(this.href,'targetWindow', 'width=600, height=600', ); return false;"
+            onclick="openCenteredWindow(this.href); return false;"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-github fa-3x"></i
-          ></a>
+          >
+            <i class="fa-brands fa-github fa-3x"></i>
+          </a>
           <a
             title="Email"
             class="socialMediaLink"
-            href="mailto:oenghuswalsh@gmail.com"
-            subject="Connect"
-            body="Hi."
+            href="mailto:oenghuswalsh@gmail.com?subject=Connection request&body=Hi Oenghus, I love your portfolio and would like to connect for a chat!"
             target="_blank"
-            onclick="window.open(this.href,'targetWindow', 'width=600, height=600', ); return false;"
+            onclick="openCenteredWindow(this.href); return false;"
             rel="noopener noreferrer"
-            ><i class="fa-solid fa-envelope fa-3x"></i
-          ></a>
+          >
+            <i class="fa-solid fa-envelope fa-3x"></i>
+          </a>
         </div>
       </div>
     </header>
-    <section class="banner"></section>
-    <section class="portfolioWebsites">
-      <header>
-        <h2>Your Portfolio</h2>
-      </header>
-      <main id="projects">
-        <!-- Insert thumbnail images here -->
-      </main>
-    </section>
-    <section class="portfolioApps"></section>
-    <section class="developmentProcess"></section>
-    <section class="aboutMe"></section>
-    <footer></footer>
+    <main>
+      <section class="banner">
+        <div class="bannerBackground">
+          <p class="bannerParagraph">
+            My name is Oenghus Walsh I am a Web Developer and I have created a
+            portfolio of work around a passion for codeing, technical precision
+            and functionality and providing a service that is fun and productive
+            while sharing my knowledge and delivering projects that clients love
+            and enjoy.
+          </p>
+          <img
+            class="bannerImage"
+            src="./Portfolio_images/NeonWolf.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="portfolioWebsites">
+        <h2 class="projectsHeader">Websites</h2>
+        <div class="projects websites">
+          <!-- First website card in website section-->
+          <div class="cards websiteCard">
+            <a
+              title="GitHub Page"
+              href="https://oenghuswalsh.github.io/CRM-Website/index.html"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="cardImage"
+                src="./Portfolio_images/Resized/CRM_Website.png"
+                alt="A screen shot from a website"
+              />
+            </a>
+            <p class="cardParaLabel">Name:</p>
+            <a
+              title="GitHub Page"
+              href="https://oenghuswalsh.github.io/CRM-Website/index.html"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CRM Website</a
+            >
+            <p class="cardParaLabel">Project:</p>
+            <p class="cardParagraph">
+              A course assignment to create a CRM style single page webiste.
+            </p>
+            <p class="cardParaLabel">Tech:</p>
+            <p class="cardParagraph">
+              HTML, CSS, JS, JQuery
+              <span
+                ><a
+                  onclick="openWebsiteWindow(this.href); return false;"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Oenghuswalsh/CRM-website"
+                  >&nbsp;Go to code</a
+                ></span
+              >
+            </p>
+            <p class="cardParaLabel">Brief:</p>
+            <p class="cardParagraph">
+              This single page CRM website was an assignment on the use of JS
+              and JQuery when studing web development with
+            </p>
+            <a
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lumifylearn.com/"
+              >Lumifylearn</a
+            >
+          </div>
+          <!-- Seccond website card in website section-->
+          <div class="cards websiteCard">
+            <a
+              title="GitHub Page"
+              class="socialMediaLink"
+              href="https://oenghuswalsh.github.io/Local_Pets/"
+              onclick="openMultiPageWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="cardImage"
+                src="./Portfolio_images/Resized/Pet_shop_b_c4odzx_c_scale,w_300.png"
+                alt="A screen shot from a website"
+              />
+            </a>
+            <p class="cardParaLabel">Name:</p>
+            <a
+              title="GitHub Page"
+              href="https://oenghuswalsh.github.io/Local_Pets/"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Local Pets</a
+            >
+            <p class="cardParaLabel">Project:</p>
+            <p class="cardParagraph">A website for a Local pet shop</p>
+            <p class="cardParaLabel">Tech:</p>
+            <p class="cardParagraph">
+              HTML, CSS, JS
+              <span
+                ><a
+                  onclick="openWebsiteWindow(this.href); return false;"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Oenghuswalsh/Local_Pets"
+                  >&nbsp;Go to code</a
+                ></span
+              >
+            </p>
+            <p class="cardParaLabel">Brief:</p>
+            <p class="cardParagraph">
+              This multi page website was an assignment while studing web
+              development with
+            </p>
+            <a
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lumifylearn.com/"
+              >Lumifylearn</a
+            >
+          </div>
+          <!-- Third website card in website section-->
+          <div class="cards websiteCard">
+            <a
+              title="GitHub Page"
+              class="socialMediaLink"
+              href="https://oenghuswalsh.github.io/moshify/"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="cardImage"
+                src="./Portfolio_images/Resized/Moshify.png"
+                alt="A screen shot from a website"
+              />
+            </a>
+            <p class="cardParaLabel">Name:</p>
+            <a
+              title="GitHub Page"
+              href="https://oenghuswalsh.github.io/moshify/index.html"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Moshify</a
+            >
+            <p class="cardParaLabel">Project:</p>
+            <p class="cardParagraph">
+              An excerise to build and deploy a website.
+            </p>
+            <p class="cardParaLabel">Tech:</p>
+            <p class="cardParagraph">
+              HTML, CSS, JS, JSON
+              <span
+                ><a
+                  onclick="openWebsiteWindow(this.href); return false;"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Oenghuswalsh/moshify"
+                  >&nbsp;Go to code</a
+                ></span
+              >
+            </p>
+            <p class="cardParaLabel">Brief:</p>
+            <p class="cardParagraph">
+              This is a fictuious cloud hosting website I built in a code along
+              course. The Ultimate HTML5 & CSS3 Series from
+            </p>
+            <a
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://codewithmosh.com/p/the-ultimate-html-css-part1"
+              >Code with Mosh</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="portfolioApps">
+        <h2 class="projectsHeader">Simple Apps</h2>
+        <div class="projects websites">
+          <!-- First App card in App section-->
+          <div class="cards websiteCard">
+            <a
+              title="Simple App"
+              class="socialMediaLink"
+              href="./Silly_story/index.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="cardImage"
+                src="./Portfolio_images/Resized/Silly_Story_Generator_xtcwql_c_scale,w_300.png"
+                alt="A screen shot from a website"
+              />
+            </a>
+            <p class="cardParaLabel">Name:</p>
+            <a
+              title="Simple App"
+              href="./Silly_story/index.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Silly story generator</a
+            >
+            <p class="cardParaLabel">Project:</p>
+            <p class="cardParagraph">A little app to create a silly story.</p>
+            <p class="cardParaLabel">Tech:</p>
+            <p class="cardParagraph">
+              HTML, CSS, JS
+              <span
+                ><a
+                  onclick="openWebsiteWindow(this.href); return false;"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Oenghuswalsh/Silly-story-generator"
+                  >&nbsp;Go to code</a
+                ></span
+              >
+            </p>
+            <p class="cardParaLabel">Brief:</p>
+            <p class="cardParagraph">
+              I created this app to practice my JavaScript coding. Borrowing the
+              design from the internet.
+            </p>
+          </div>
+          <!-- Seccond App card in App section-->
+          <div class="cards websiteCard">
+            <a
+              title="Simple App"
+              class="socialMediaLink"
+              href="./Coin_Counter/index.html"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="cardImage"
+                src="./Portfolio_images/Resized/Coin_counter_pdeayk_c_scale,w_300.png"
+                alt="A screen shot from a website"
+              />
+            </a>
+            <p class="cardParaLabel">Name:</p>
+            <a
+              title="Simple App"
+              href="./Coin_Counter/index.html"
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >How many Coins</a
+            >
+            <p class="cardParaLabel">Project:</p>
+            <p class="cardParagraph">
+              An app to calculate how many coins woill fit in a certian space.
+            </p>
+            <p class="cardParaLabel">Tech:</p>
+            <p class="cardParagraph">
+              HTML, CSS, JS
+              <span
+                ><a
+                  onclick="openWebsiteWindow(this.href); return false;"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Oenghuswalsh"
+                  >&nbsp;Go to code</a
+                ></span
+              >
+            </p>
+            <p class="cardParaLabel">Brief:</p>
+            <p class="cardParagraph">
+              I was quirous one day so I created this app to practice my
+              JavaScript coding.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="developmentProcess">
+        <a title="Development Process" href="#">
+          <h2 class="projectsHeader">My Development Process</h2>
+          <div class="projects">
+            <div class="cards developmentCard">
+              <h3 class="developmenth3">1.</h3>
+              <p class="cardParaLabel">Discovery</p>
+              <p class="cardParagraph">
+                During this phase, I will work with clients to determine the
+                project scope, objectives, and requirements. This includes
+                gathering information about the target audience and their needs.
+              </p>
+            </div>
+
+            <div class="cards developmentCard">
+              <h3 class="developmenth3">2.</h3>
+              <p class="cardParaLabel">Design</p>
+              <p class="cardParagraph">
+                In this phase, I will create wire frames and design mock-ups to
+                visualize your website’s layout and user interface. You will
+                have the opportunity to provide feedback and make revisions.
+              </p>
+            </div>
+
+            <div class="cards developmentCard">
+              <h3 class="developmenth3">3.</h3>
+              <p class="cardParaLabel">Development</p>
+              <p class="cardParagraph">
+                During the development phase, the website’s features and
+                functionality are created using coding languages and web
+                development frameworks. The website will be tested for usability
+                and compatibility.
+              </p>
+            </div>
+
+            <div class="cards developmentCard">
+              <h3 class="developmenth3">4.</h3>
+              <p class="cardParaLabel">Deliver</p>
+              <p class="cardParagraph">
+                Once your website is ready, it will be launched and made
+                available to the public. I will ensure that your website is
+                optimized for search engines and that all necessary analytics
+                and tracking tools are in place.
+              </p>
+            </div>
+
+            <div class="cards developmentCard">
+              <h3 class="developmenth3">5.</h3>
+              <p class="cardParaLabel">Depend</p>
+              <p class="cardParagraph">
+                After launch, I will provide ongoing maintenance and support to
+                ensure your website remains functional and up-to-date. This
+                includes fixing bugs, updating content, providing security
+                measures, and providing you with technical support.
+              </p>
+            </div>
+          </div>
+        </a>
+      </section>
+      <section class="aboutMe">
+        <h2 class="projectsHeader">About me</h2>
+        <div class="projects">
+          <a title="The Developer" class="socialMediaLink" href="#">
+            <div class="cards aboutCard">
+              <h3>The Developer</h3>
+              <p class="aboutParagraph">
+                I am a dedicated and passionate individual with a keen interest
+                in the world of web development. As a recent graduate with a
+                Certificate IV in Information Technology (Website Development)
+                from Lumify, I have set my sights on a career as a Front-End
+                Developer. My journey in this field has been driven by an
+                unwavering curiosity and a commitment to continuous learning.
+              </p>
+              <br />
+              <p class="aboutParagraph">
+                With a solid foundation in HTML5, CSS3, and JavaScript, I am
+                enthusiastic about creating visually appealing and responsive
+                web experiences. My quest for knowledge extends beyond the
+                classroom, as evidenced by my pursuit of various LinkedIn
+                certifications, including MySQL, Figma, and Visual Studio Code.
+                These certifications reflect my dedication to mastering the
+                tools and technologies essential to this dynamic industry.
+              </p>
+              <br />
+              <p class="aboutParagraph">
+                What sets me apart is my diverse background, encompassing roles
+                in project management, design, and teamwork. My experiences as a
+                Kitchen Planner/Designer at IKEA, a business owner with
+                "Designed in Wood," and various roles in the furniture industry
+                have equipped me with valuable transferable skills. I bring a
+                unique blend of project management, attention to detail, and
+                effective communication to the world of web development.
+              </p>
+              <br />
+              <p class="aboutParagraph">
+                I am drawn to the limitless possibilities of web development and
+                the opportunity to craft outstanding user experiences. With a
+                keen eye for detail and a penchant for solving complex
+                challenges, I aspire to contribute to projects that leave a
+                lasting impact. My mission is to continuously enhance my skills,
+                collaborate with like-minded professionals, and bring my
+                creativity to the forefront of web development. If you're
+                seeking a motivated and adaptable Front-End Developer, I'm eager
+                to connect and explore how we can shape the digital world
+                together.
+              </p>
+            </div>
+          </a>
+          <a title="The Developer" class="socialMediaLink" href="#">
+            <div class="cards aboutCard">
+              <h3>The Person</h3>
+              <p class="aboutParagraph">
+                My name is Oenghus Walsh I am a Web Developer and I have created
+                a portfolio of work around a passion for code, technical
+                precision and functionality and providing a service that is fun
+                and productive while sharing my knowledge and delivering
+                projects that clients love and enjoy.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerBlock">
+        <a href="./index.html">
+          <div class="logo">
+            <p class="logoText">OW</p>
+          </div>
+        </a>
+        <p>&copyCopyright Oenghus Walsh 2023</p>
+        <div>
+          <nav class="footerNav">
+            <a class="navButton" href="#portfolio">Portfolio Work</a>
+            <a class="navButton" href="#aboutMe">About Me</a>
+            <a class="navButton" href="#contactMe">Contact Me</a>
+          </nav>
+        </div>
+        <div class="socialMedia">
+          <a
+            title="Linkedin"
+            class="socialMediaLink"
+            href="https://www.linkedin.com/in/oenghus-walsh-494b1499"
+            onclick="openCenteredWindow(this.href); return false;"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+          <a
+            title="GitHub"
+            class="socialMediaLink"
+            href="https://github.com/Oenghuswalsh"
+            onclick="openCenteredWindow(this.href); return false;"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github fa-3x"></i>
+          </a>
+          <a
+            title="Email"
+            class="socialMediaLink"
+            href="mailto:oenghuswalsh@gmail.com?subject=Connection request&body=Hi Oenghus, I love your portfolio and would like to connect for a chat!"
+            target="_blank"
+            onclick="openCenteredWindow(this.href); return false;"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-envelope fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

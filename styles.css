@@ -1,11 +1,16 @@
 body {
-  background-image: url(./Portfolio_images/magicpattern-grid-pattern-1698108549255.png);
+  background-image: url(./Portfolio_images/grid-pattern.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
     sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .headerBlock {
@@ -22,7 +27,7 @@ body {
   align-items: center;
   height: 80px;
   width: 80px;
-  border-radius: 40px;
+  border-radius: 20px 0 20px 0;
   background-image: url(./Portfolio_images/magicpattern-grid-pattern-1698108549255.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,6 +53,7 @@ header a {
 }
 
 .siteTitle h1 {
+  text-align: center;
   font-size: 40px;
   margin: 0 0 15px 0;
 }
@@ -84,27 +90,175 @@ nav .navButton:hover {
   margin: 10px;
   width: 200px;
 }
+
 .socialMedia a {
   color: black;
 }
 
-#projects {
+main {
+  padding: 0 100px 0 100px;
+}
+
+.bannerBackground {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  border-radius: 100px 0 100px 0;
+  background-color: rgb(0, 117, 255, 11%);
+  margin: 2em auto;
+  min-width: 700px;
+  max-width: 1100px;
 }
 
-.project {
-  margin: 10px;
-  cursor: pointer;
+.bannerParagraph {
+  width: 33%;
+  min-width: 330px;
+  max-width: 360px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
-.project img {
-  max-width: 200px;
-  max-height: 150px;
-  transition: transform 0.2s;
+.bannerImage {
+  height: 420px;
+  width: 33%;
+  min-width: 330px;
+  max-width: 360px;
+  border-radius: 100px 0 100px 0;
 }
 
-.project img:hover {
-  transform: scale(1.1);
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 510px;
+  border-radius: 100px 0 100px 0;
+  margin: 0 auto 2em auto;
+  min-width: 700px;
+  max-width: 1100px;
+}
+
+.projectsHeader {
+  margin: 3em 0 0 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 500px;
+  border-radius: 50px 0 50px 0;
+  background-color: rgb(0, 117, 255, 11%);
+  padding: 5px;
+}
+
+.cardImage {
+  height: 250px;
+  width: 310px;
+  border-radius: 50px 0 50px 0;
+}
+
+.cardParagraph {
+  display: flex;
+  color: black;
+  text-align: left;
+  font-size: 1rem;
+  line-height: normal;
+  margin: 0;
+}
+
+.cardParaLabel {
+  display: flex;
+  color: black;
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: left;
+  margin: 0;
+}
+
+.cards a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.developmentCard {
+  display: flex;
+  flex-direction: column;
+  width: 205px;
+  height: 330px;
+  border-radius: 50px 0 50px 0;
+  background-color: rgb(0, 117, 255, 11%);
+  padding: 5px;
+}
+
+.developmenth3 {
+  margin: 25px 0 0 0;
+  border-bottom: 2px solid black;
+}
+
+.developmentCard .cardParaLabel {
+  text-decoration: none;
+}
+
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 50px 0 50px 0;
+  background-color: rgb(0, 117, 255, 11%);
+  padding: 5px;
+  overflow: auto;
+  cursor: s-resize;
+}
+.aboutCard::-webkit-scrollbar {
+  display: none;
+}
+.aboutMe h3 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.aboutParagraph {
+  display: flex;
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+  line-height: normal;
+  margin: 0;
+}
+
+.footerBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(0, 117, 255, 50%);
+}
+
+footer p {
+  display: flex;
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+  line-height: normal;
+  margin: 60px 100px 0 0;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 50px 0 0;
 }
