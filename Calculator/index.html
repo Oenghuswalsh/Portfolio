@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator APP in JavaScript</title>
+
+    
+</body>
+
+
+    
+    <!-- This is all the css style elements used to display this calculator app  -->
+    <style>
+      body {
+        margin: 10px 100px;
+      }
+
+      #calculator {
+        background-color: red;
+        display: block;
+        width: 50vw;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 1rem;
+        margin: 0 0.5rem 1rem;
+      }
+
+      label {
+        font-size: 20px;
+      }
+
+      #firstNum,
+      #secondNum,
+      #result {
+        text-align: center;
+        font-size: 32px;
+        width: 20vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // JavaScript variables
+        var firstNum = document.getElementById("firstNum");
+        var secondNum = document.getElementById("secondNum");
+        var operator = "";
+        var result = "";
+        var equal = " = ";
+
+        // JavaScript function to handle form submission
+        document
+          .getElementById("calculator")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get the operator value
+            var operatorButtons = document.getElementsByName("operator");
+            operatorButtons.forEach(function (button) {
+              if (button.type === "submit" && button.clicked) {
+                operator = button.value;
+              }
+            });
+
+            // Perform calculations
+            if (secondNum.value === "0" && operator === "/") {
+              result = " Don't divide by 0 ";
+            } else if (!isNaN(firstNum.value) && !isNaN(secondNum.value)) {
+              switch (operator) {
+                case "+":
+                  result =
+                    parseFloat(firstNum.value) + parseFloat(secondNum.value);
+                  break;
+                case "-":
+                  result =
+                    parseFloat(firstNum.value) - parseFloat(secondNum.value);
+                  break;
+                case "*":
+                  result =
+                    parseFloat(firstNum.value) * parseFloat(secondNum.value);
+                  break;
+                case "/":
+                  result =
+                    parseFloat(firstNum.value) / parseFloat(secondNum.value);
+                  break;
+                case "reset":
+                  firstNum.value = "";
+                  operator = "";
+                  secondNum.value = "";
+                  result = "";
+                  equal = " = ";
+                  break;
+              }
+            }
+
+            // Display result
+            document.getElementById("result").value = result;
+
+            // Update calculatorLog
+            var calculatorLog =
+              firstNum.value +
+              " " +
+              operator +
+              " " +
+              secondNum.value +
+              equal +
+              result +
+              "\n";
+            document.getElementById("calculatorLog").value += calculatorLog;
+
+            // Save to calculatorLog.txt (you may need to handle this on the server-side)
+            // For simplicity, I'm displaying it in the textarea
+            var fileToOpen = document.getElementById("fileToOpen");
+            fileToOpen.value = calculatorLog + fileToOpen.value;
+          });
+
+        // Update operatorButtons to mark the clicked button
+        var operatorButtons = document.getElementsByName("operator");
+        operatorButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            operatorButtons.forEach(function (btn) {
+              btn.clicked = false;
+            });
+            button.clicked = true;
+          });
+        });
+      });
+    </script>
+
+    <form action="#" method="POST" id="calculator">
+      <h1>CALCULATOR</h1>
+      <br />
+      <label for="firstnum">First number</label><br />
+      <input title="Enter a number"
+        type="number"
+        name="firstNum"
+        id="firstNum"
+        step="any"
+        required
+      /><br /><br />
+      <label for="secondNum">Second Number</label><br />
+      <input title="Enter a number"
+        type="number"
+        name="secondNum"
+        id="secondNum"
+        step="any"
+        required
+      /><br /><br />
+      <input
+        type="submit"
+        name="operator"
+        value="+"
+        onclick="document.getElementsByName('operator').forEach(e => e.clicked = false); this.clicked = true;"
+      />
+      <input
+        type="submit"
+        name="operator"
+        value="-"
+        onclick="document.getElementsByName('operator').forEach(e => e.clicked = false); this.clicked = true;"
+      />
+      <input
+        type="submit"
+        name="operator"
+        value="*"
+        onclick="document.getElementsByName('operator').forEach(e => e.clicked = false); this.clicked = true;"
+      />
+      <input
+        type="submit"
+        name="operator"
+        value="/"
+        onclick="document.getElementsByName('operator').forEach(e => e.clicked = false); this.clicked = true;"
+      />
+      <input
+        type="submit"
+        name="operator"
+        value="reset"
+        onclick="document.getElementsByName('operator').forEach(e => e.clicked = false); this.clicked = true;"
+      /><br /><br />
+      <label for="result">Result</label><br />
+      
+      <input readonly name="result" id="result" step="any" /><br /><br />
+      <!-- This textarea is a log of all the calculations by the user -->
+      <label for="calculatorLog">Calculator Log</label><br />
+      <textarea title="Results Log"
+        name="calculatorLog"
+        id="calculatorLog"
+        cols="40"
+        rows="10"
+      ></textarea
+      ><br /><br />
+      <!-- I used the echo function to display the values and the operator the user has input and also the result
+        when the user preforms the next calculation the previous entry is saved to the calculatorLog.txt file and moved to the next line in the textarea output. -->
+    </form>
+    <br /><br />
+    <!-- This is a hidden field to simulate the file_get_contents("calculatorLog.txt") -->
+    <input type="hidden" id="fileToOpen" value="" />
+  </body>
+</html>

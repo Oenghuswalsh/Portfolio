@@ -18,6 +18,14 @@
     <script defer src="./javascript.js"></script>
   </head>
   <body>
+    <button
+      onclick="topFunction()"
+      class="navButton"
+      id="BackToTopButton"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </button>
     <header>
       <div class="headerBlock">
         <a href="./index.html">
@@ -29,15 +37,22 @@
           <h1>Oenghus Walsh Wed Developer Portfolio</h1>
           <nav>
             <a class="navButton" href="#portfolio">Portfolio Work</a>
-            <a class="navButton" href="#aboutMe">About Me</a>
-            <a class="navButton" href="#contactMe">Contact Me</a>
+            <a class="navButton" href="#about">About Me</a>
+            <a
+              class="navButton"
+              href="Contact_form/contactForm.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Me</a
+            >
           </nav>
         </div>
         <div class="socialMedia">
           <a
             title="Linkedin"
             class="socialMediaLink"
-            href="https://www.linkedin.com/in/oenghus-walsh-494b1499"
+            href="https://www.linkedin.com/in/oenghuswalsh"
             onclick="openCenteredWindow(this.href); return false;"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,9 +72,9 @@
           <a
             title="Email"
             class="socialMediaLink"
-            href="mailto:oenghuswalsh@gmail.com?subject=Connection request&body=Hi Oenghus, I love your portfolio and would like to connect for a chat!"
+            href="Contact_form/contactForm.html"
+            onclick="openAppWindow(this.href); return false;"
             target="_blank"
-            onclick="openCenteredWindow(this.href); return false;"
             rel="noopener noreferrer"
           >
             <i class="fa-solid fa-envelope fa-3x"></i>
@@ -71,8 +86,8 @@
       <section class="banner">
         <div class="bannerBackground">
           <p class="bannerParagraph">
-            My name is Oenghus Walsh I am a Web Developer and I have created a
-            portfolio of work around a passion for codeing, technical precision
+            My name is Oenghus Walsh, I am a Web Developer and I have created a
+            portfolio of work around a passion for coding, technical precision
             and functionality and providing a service that is fun and productive
             while sharing my knowledge and delivering projects that clients love
             and enjoy.
@@ -84,14 +99,14 @@
           />
         </div>
       </section>
-      <section class="portfolioWebsites">
+      <section id="portfolio" class="portfolioWebsites">
         <h2 class="projectsHeader">Websites</h2>
         <div class="projects websites">
           <!-- First website card in website section-->
           <div class="cards websiteCard">
             <a
               title="GitHub Page"
-              href="https://oenghuswalsh.github.io/CRM-Website/index.html"
+              href="https://oenghuswalsh.github.io/CRM/"
               onclick="openWebsiteWindow(this.href); return false;"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,7 +120,7 @@
             <p class="cardParaLabel">Name:</p>
             <a
               title="GitHub Page"
-              href="https://oenghuswalsh.github.io/CRM-Website/index.html"
+              href="https://oenghuswalsh.github.io/CRM/"
               onclick="openWebsiteWindow(this.href); return false;"
               target="_blank"
               rel="noopener noreferrer"
@@ -123,7 +138,7 @@
                   onclick="openWebsiteWindow(this.href); return false;"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/Oenghuswalsh/CRM-website"
+                  href="https://github.com/Oenghuswalsh/CRM"
                   >&nbsp;Go to code</a
                 ></span
               >
@@ -305,6 +320,61 @@
             <a
               title="Simple App"
               class="socialMediaLink"
+              href="./Calculator/index.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="cardImage"
+                src="./Portfolio_images/Resized/Calculator_app_b_fu7rut_c_scale,w_300.png"
+                alt="A screen shot from a website"
+              />
+            </a>
+            <p class="cardParaLabel">Name:</p>
+            <a
+              title="Simple App"
+              href="./Calculator/index.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Calculator</a
+            >
+            <p class="cardParaLabel">Project:</p>
+            <p class="cardParagraph">
+              A course assignment to create a simple calculator.
+            </p>
+            <p class="cardParaLabel">Tech:</p>
+            <p class="cardParagraph">
+              HTML, CSS, JS
+              <span
+                ><a
+                  onclick="openWebsiteWindow(this.href); return false;"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Oenghuswalsh/Calculator"
+                  >&nbsp;Go to code</a
+                ></span
+              >
+            </p>
+            <p class="cardParaLabel">Brief:</p>
+            <p class="cardParagraph">
+              This calculater App was an assignment when studing web development
+              with
+            </p>
+            <a
+              onclick="openWebsiteWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lumifylearn.com/"
+              >Lumifylearn</a
+            >
+          </div>
+          <!-- Third App card in App section-->
+          <div class="cards websiteCard">
+            <a
+              title="Simple App"
+              class="socialMediaLink"
               href="./Coin_Counter/index.html"
               onclick="openWebsiteWindow(this.href); return false;"
               target="_blank"
@@ -350,64 +420,62 @@
           </div>
         </div>
       </section>
-      <section class="developmentProcess">
-        <a title="Development Process" href="#">
-          <h2 class="projectsHeader">My Development Process</h2>
-          <div class="projects">
-            <div class="cards developmentCard">
-              <h3 class="developmenth3">1.</h3>
-              <p class="cardParaLabel">Discovery</p>
-              <p class="cardParagraph">
-                During this phase, I will work with clients to determine the
-                project scope, objectives, and requirements. This includes
-                gathering information about the target audience and their needs.
-              </p>
-            </div>
-
-            <div class="cards developmentCard">
-              <h3 class="developmenth3">2.</h3>
-              <p class="cardParaLabel">Design</p>
-              <p class="cardParagraph">
-                In this phase, I will create wire frames and design mock-ups to
-                visualize your website’s layout and user interface. You will
-                have the opportunity to provide feedback and make revisions.
-              </p>
-            </div>
-
-            <div class="cards developmentCard">
-              <h3 class="developmenth3">3.</h3>
-              <p class="cardParaLabel">Development</p>
-              <p class="cardParagraph">
-                During the development phase, the website’s features and
-                functionality are created using coding languages and web
-                development frameworks. The website will be tested for usability
-                and compatibility.
-              </p>
-            </div>
-
-            <div class="cards developmentCard">
-              <h3 class="developmenth3">4.</h3>
-              <p class="cardParaLabel">Deliver</p>
-              <p class="cardParagraph">
-                Once your website is ready, it will be launched and made
-                available to the public. I will ensure that your website is
-                optimized for search engines and that all necessary analytics
-                and tracking tools are in place.
-              </p>
-            </div>
-
-            <div class="cards developmentCard">
-              <h3 class="developmenth3">5.</h3>
-              <p class="cardParaLabel">Depend</p>
-              <p class="cardParagraph">
-                After launch, I will provide ongoing maintenance and support to
-                ensure your website remains functional and up-to-date. This
-                includes fixing bugs, updating content, providing security
-                measures, and providing you with technical support.
-              </p>
-            </div>
+      <section id="about" class="developmentProcess">
+        <h2 class="projectsHeader">5 Steps of Website Development</h2>
+        <div class="developmentProjects">
+          <div class="cards developmentCard">
+            <h3 class="developmenth3">1.</h3>
+            <p class="cardParaLabel">Discovery</p>
+            <p class="cardParagraph">
+              During this phase, I will work with clients to determine the
+              project scope, objectives, and requirements. This includes
+              gathering information about the target audience and their needs.
+            </p>
           </div>
-        </a>
+
+          <div class="cards developmentCard">
+            <h3 class="developmenth3">2.</h3>
+            <p class="cardParaLabel">Design</p>
+            <p class="cardParagraph">
+              In this phase, I will create wire frames and design mock-ups to
+              visualize your website’s layout and user interface. You will have
+              the opportunity to provide feedback and make revisions.
+            </p>
+          </div>
+
+          <div class="cards developmentCard">
+            <h3 class="developmenth3">3.</h3>
+            <p class="cardParaLabel">Development</p>
+            <p class="cardParagraph">
+              During the development phase, the website’s features and
+              functionality are created using coding languages and web
+              development frameworks. The website will be tested for usability
+              and compatibility.
+            </p>
+          </div>
+
+          <div class="cards developmentCard">
+            <h3 class="developmenth3">4.</h3>
+            <p class="cardParaLabel">Deliver</p>
+            <p class="cardParagraph">
+              Once your website is ready, it will be launched and made available
+              to the public. I will ensure that your website is optimized for
+              search engines and that all necessary analytics and tracking tools
+              are in place.
+            </p>
+          </div>
+
+          <div class="cards developmentCard">
+            <h3 class="developmenth3">5.</h3>
+            <p class="cardParaLabel">Depend</p>
+            <p class="cardParagraph">
+              After launch, I will provide ongoing maintenance and support to
+              ensure your website remains functional and up-to-date. This
+              includes fixing bugs, updating content, providing security
+              measures, and providing you with technical support.
+            </p>
+          </div>
+        </div>
       </section>
       <section class="aboutMe">
         <h2 class="projectsHeader">About me</h2>
@@ -456,18 +524,77 @@
                 to connect and explore how we can shape the digital world
                 together.
               </p>
+              <br />
             </div>
           </a>
           <a title="The Developer" class="socialMediaLink" href="#">
             <div class="cards aboutCard">
               <h3>The Person</h3>
               <p class="aboutParagraph">
-                My name is Oenghus Walsh I am a Web Developer and I have created
-                a portfolio of work around a passion for code, technical
-                precision and functionality and providing a service that is fun
-                and productive while sharing my knowledge and delivering
-                projects that clients love and enjoy.
+                I have always been creative and in my working life I have had
+                the opportunity to work in many creative ways. As a furniture
+                designer/maker for 25 plus years I have been designing,
+                developing and have created many things. Leaving school I
+                started a cabinet making apprenticeship in a handmade furniture
+                business and from there moved into more automated manufacturing
+                processes. This is where I started operating CNC machines and
+                learned to program and design in 3D softwares and cad cam
+                programs. I found a drive and excitement within myself to create
+                processes that were more efficient and would push the boundaries
+                of the machine and systems, and sometimes these ideas didn’t
+                work or I learned that to keep all the teams working, keeping it
+                simple is sometimes better. But most importantly I had found
+                something I was passionate about doing.
               </p>
+              <br />
+              <p class="aboutParagraph">
+                I had knowledge of materials, products, machines and the
+                software, teams and people and with these abilities I worked on
+                my skills in project management and communicating with other
+                departments and clients. This allowed me to move into more
+                design and project related roles where I had more direct contact
+                with clients and was fully responsible for the project design
+                and development for production. Here I developed skills in
+                client relationships and inter departmental communication as
+                well as gaining experience in project management. This
+                eventually led me to start my own business as a furniture
+                designer/maker, which presented its own challenges like business
+                management, business finances, customer prospecting, customer
+                retention and many more.
+              </p>
+              <br />
+              <p class="aboutParagraph">
+                After 5 successful years I put this business aside as we
+                relocated our family and moving the business was not possible so
+                I became a kitchen sales and designer with IKEA, very quickly I
+                mastered this role which allowed me to share my knowledge of
+                kitchen design and manufacturing with my colleagues and
+                customers alike. I found great pride in educating customers and
+                watching them walk away knowing they can make a better decision
+                even if I didn't make that sale!
+              </p>
+              <br />
+              <p class="aboutParagraph">
+                After another family relocation, this time from Ireland to
+                Australia, I suddenly had lots of free time so I entered into
+                the world of tech and web development. All of my experiences up
+                to this point allowed me to transition into coding quite easily.
+                I also realized I had a passion for coding too as I could be
+                just as creative as I used to be in furniture making. And many
+                of the processes I used were perfect for web development which
+                has given me a great foundation to start from, now I just need
+                to learn the coding languages!
+              </p>
+              <br />
+              <p class="aboutParagraph">
+                I started to dabble in web development and coding and then did
+                some online courses and eventually a certificate course in IT
+                and web development which I successfully graduated, and now I am
+                working on some projects to create a portfolio of work to
+                showcase myself and hopefully inspire you to get in touch if
+                even just for a chat over coffee!
+              </p>
+              <br />
             </div>
           </a>
         </div>
@@ -484,15 +611,22 @@
         <div>
           <nav class="footerNav">
             <a class="navButton" href="#portfolio">Portfolio Work</a>
-            <a class="navButton" href="#aboutMe">About Me</a>
-            <a class="navButton" href="#contactMe">Contact Me</a>
+            <a class="navButton" href="#about">About Me</a>
+            <a
+              class="navButton"
+              href="Contact_form/contactForm.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Me</a
+            >
           </nav>
         </div>
         <div class="socialMedia">
           <a
             title="Linkedin"
             class="socialMediaLink"
-            href="https://www.linkedin.com/in/oenghus-walsh-494b1499"
+            href="https://www.linkedin.com/in/oenghuswalsh"
             onclick="openCenteredWindow(this.href); return false;"
             target="_blank"
             rel="noopener noreferrer"
@@ -512,9 +646,9 @@
           <a
             title="Email"
             class="socialMediaLink"
-            href="mailto:oenghuswalsh@gmail.com?subject=Connection request&body=Hi Oenghus, I love your portfolio and would like to connect for a chat!"
+            href="Contact_form/contactForm.html"
             target="_blank"
-            onclick="openCenteredWindow(this.href); return false;"
+            onclick="openAppWindow(this.href); return false;"
             rel="noopener noreferrer"
           >
             <i class="fa-solid fa-envelope fa-3x"></i>

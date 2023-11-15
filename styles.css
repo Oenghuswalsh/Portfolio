@@ -1,5 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#BackToTopButton {
+  display: none;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 120px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #00fa1a;
+  color: red;
+  border-radius: 10px;
+}
+
+#BackToTopButton:hover {
+  outline: solid 2px #ff00f5;
+  cursor: pointer;
+}
+
 body {
-  background-image: url(./Portfolio_images/grid-pattern.png);
+  background-image: url(./Portfolio_images/grid-pattern_2.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -107,7 +133,7 @@ main {
   height: 500px;
   border-radius: 100px 0 100px 0;
   background-color: rgb(0, 117, 255, 11%);
-  margin: 2em auto;
+  margin: 132px auto 2em;
   min-width: 700px;
   max-width: 1100px;
 }
@@ -136,6 +162,18 @@ main {
   justify-content: space-between;
   align-items: center;
   height: 510px;
+  border-radius: 100px 0 100px 0;
+  margin: 0 auto 2em auto;
+  min-width: 700px;
+  max-width: 1100px;
+}
+
+.developmentProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 340px;
   border-radius: 100px 0 100px 0;
   margin: 0 auto 2em auto;
   min-width: 700px;
@@ -261,4 +299,83 @@ footer p {
   justify-content: space-between;
   width: 100%;
   margin: 0 50px 0 0;
+}
+
+/* Style for contact forms on contacts page*/
+.homeForms .contactDetails {
+  padding: 1rem;
+  margin: 0 0.5rem 1rem;
+  border: solid #ff7a00 2px;
+  border-radius: 4px;
+}
+.homeForms ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding: 0;
+}
+.homeForms li {
+  margin-left: 2rem;
+}
+
+.homeForms .forms {
+  margin: 200px 0.5rem 1rem;
+}
+.contactUsForm {
+  font-size: 1.5rem;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.formContact {
+  background-color: white;
+  display: block;
+  border: 2px solid #ff7a00;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 0 0.5rem 1rem;
+}
+.formControl {
+  width: 90%;
+  border: 1px solid #ff7a00;
+  border-radius: 4px;
+  padding: 0.2rem;
+  outline: 0;
+  margin-bottom: 1rem;
+  transition: border 0.15s, box-shadow 0.15s;
+}
+
+.formControl:focus {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.smButton {
+  border-radius: 4px;
+  width: 45%;
+  padding: 0;
+}
+.smButton:hover {
+  color: #ff7a00;
+}
+.homeForms h2 {
+  text-align: center;
+}
+.inputBox {
+  width: 20px;
+  margin: 0 1rem 0 0;
+}
+.checkbox {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  display: flex;
+  justify-items: left;
+  padding: 0.2rem;
+  outline: 0;
+  margin-bottom: 1rem;
 }
