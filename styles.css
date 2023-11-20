@@ -379,3 +379,117 @@ footer p {
   outline: 0;
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .headerBlock {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  main {
+    padding: 0;
+  }
+  .siteTitle h1 {
+    font-size: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+  }
+  nav .navButton {
+    width: 80px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #00fa1a;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    line-height: normal;
+    color: black;
+  }
+  .socialMedia {
+    flex-direction: column;
+    width: 50px;
+    margin: 0 10px;
+  }
+  .socialMedia .socialMediaLink .fa-3x {
+    font-size: 2em;
+  }
+
+  .bannerBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    border-radius: 50px 0 50px 0;
+    background-color: rgb(0, 117, 255, 11%);
+    margin: 1em auto;
+    width: 310px;
+    min-width: 310px;
+    padding: 5px;
+  }
+  .bannerParagraph {
+    width: 310px;
+    min-width: 310px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  .bannerImage {
+    height: 420px;
+    width: 310px;
+    min-width: 310px;
+    border-radius: 50px 0 50px 0;
+  }
+  .projectsHeader {
+    margin: 1em 0 0 0;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    min-width: 310px;
+    height: auto;
+  }
+  .developmentProjects {
+    display: flex;
+    flex-direction: column;
+    min-width: 310px;
+    height: auto;
+  }
+  .cards {
+    margin: 5px 0;
+  }
+  .aboutCard {
+    width: 310px;
+  }
+  .footerBlock {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  footer p {
+    margin: 0;
+  }
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+  .footerNav .navButton {
+    margin: 3px 0;
+  }
+  .footerBlock .socialMedia {
+    flex-direction: column;
+    margin: 0;
+  }
+  #BackToTopButton {
+    right: 5px;
+  }
+}
