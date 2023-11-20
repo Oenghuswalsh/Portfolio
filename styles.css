@@ -386,6 +386,9 @@ footer p {
     flex-direction: row;
     height: auto;
   }
+  .logo {
+    margin: 5px;
+  }
   main {
     padding: 0;
   }
@@ -395,14 +398,14 @@ footer p {
   nav {
     display: flex;
     flex-direction: row;
-    width: 230px;
+    width: 210px;
   }
   nav .navButton {
-    width: 80px;
+    width: 70px;
     height: 20px;
     margin: 0 5px;
     background-color: #00fa1a;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     border-radius: 10px;
     border: none;
