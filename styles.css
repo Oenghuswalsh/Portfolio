@@ -149,7 +149,7 @@ main {
 }
 
 .bannerImage {
-  height: 420px;
+  height: 380px;
   width: 33%;
   min-width: 330px;
   max-width: 360px;
@@ -420,6 +420,7 @@ footer p {
   }
   .socialMedia .socialMediaLink .fa-3x {
     font-size: 2em;
+    padding: 3px 0;
   }
 
   .bannerBackground {
@@ -445,7 +446,7 @@ footer p {
   }
 
   .bannerImage {
-    height: 420px;
+    height: 340px;
     width: 310px;
     min-width: 310px;
     border-radius: 50px 0 50px 0;
