@@ -25,9 +25,6 @@ html {
 }
 
 body {
-  background-image: url(./Portfolio_images/Resized/grid-pattern_2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji",
@@ -42,9 +39,9 @@ a {
 .headerBlock {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 130px;
   background-color: rgb(0, 117, 255, 50%);
 }
 
@@ -138,12 +135,18 @@ main {
   max-width: 1100px;
 }
 
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bannerParagraph {
   width: 33%;
   min-width: 330px;
   max-width: 360px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.4;
   font-weight: 600;
 }
@@ -181,7 +184,7 @@ main {
 }
 
 .projectsHeader {
-  margin: 3em 0 0 0;
+  margin: 3em 0 2em 0;
   text-align: center;
   font-size: 32px;
 }
@@ -193,7 +196,7 @@ main {
   height: 500px;
   border-radius: 50px 0 50px 0;
   background-color: rgb(0, 117, 255, 11%);
-  padding: 5px;
+  padding: 25px;
 }
 
 .cardImage {
@@ -258,9 +261,7 @@ main {
   overflow: auto;
   cursor: s-resize;
 }
-.aboutCard::-webkit-scrollbar {
-  display: none;
-}
+
 .aboutMe h3 {
   font-size: 24px;
   text-decoration: underline;
@@ -272,13 +273,13 @@ main {
   color: black;
   font-size: 1rem;
   line-height: normal;
-  margin: 0;
+  margin: 10px;
 }
 
 .footerBlock {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100px;
   background-color: rgb(0, 117, 255, 50%);

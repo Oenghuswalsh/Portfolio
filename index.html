@@ -37,8 +37,17 @@
           <h1>Oenghus Walsh Wed Developer Portfolio</h1>
           <nav>
             <a class="navButton" href="#portfolio">Portfolio</a>
-            <a class="navButton" href="#development">Development</a>
+
             <a class="navButton" href="#about">About Me</a>
+            <a
+              class="navButton"
+              title="Email"
+              href="Contact_form/contactForm.html"
+              onclick="openAppWindow(this.href); return false;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact me
+            </a>
           </nav>
         </div>
         <div class="socialMedia">
@@ -78,16 +87,21 @@
     <main>
       <section class="banner">
         <div class="bannerBackground">
-          <p class="bannerParagraph">
-            My name is Oenghus Walsh, I am a Web Developer and I have created a
-            portfolio of work around a passion for coding, technical precision
-            and functionality and providing a service that is fun and productive
-            while sharing my knowledge and delivering projects that clients love
-            and enjoy.
-          </p>
+          <div class="bannerText">
+            <h2>Thank you for visiting!</h2>
+            <p class="bannerParagraph">
+              I'm Oenghus Walsh, Web Developer and tech enthusiast. Welcome to
+              my portfolio! Here you'll find my academic projects, which I hope
+              showcase my passion for coding, technical precision and
+              functionality. I've always believed that it is possible to combine
+              a fun design with flawless functionality and a great user
+              experience. These projects aim to do just that. Feedback is always
+              welcome, please do reach out.
+            </p>
+          </div>
           <img
             class="bannerImage"
-            src="Portfolio_images/Resized/WIN_20231121_09_35_39_Pro.jpg"
+            src="Portfolio_images/Resized/Portrait.png"
             alt=""
           />
         </div>
@@ -121,7 +135,7 @@
             >
             <p class="cardParaLabel">Project:</p>
             <p class="cardParagraph">
-              A course assignment to create a CRM style single page webiste.
+              A course assignment to create a CRM-style, single page webiste.
             </p>
             <p class="cardParaLabel">Tech:</p>
             <p class="cardParagraph">
@@ -229,7 +243,7 @@
             >
             <p class="cardParaLabel">Project:</p>
             <p class="cardParagraph">
-              An excerise to build and deploy a website.
+              An exercise to build and deploy a website.
             </p>
             <p class="cardParaLabel">Tech:</p>
             <p class="cardParagraph">
@@ -246,7 +260,7 @@
             </p>
             <p class="cardParaLabel">Brief:</p>
             <p class="cardParagraph">
-              This is a fictitious cloud hosting website I built in a code along
+              This is a fictitious cloud hosting website I built in a code-along
               course. The Ultimate HTML5 & CSS3 Series from
             </p>
             <a
@@ -288,7 +302,7 @@
             >
             <p class="cardParaLabel">Project:</p>
             <p class="cardParagraph">
-              An assignment to create webiste for a bank.
+              An assignment to create a website for a bank.
             </p>
             <p class="cardParaLabel">Tech:</p>
             <p class="cardParagraph">
@@ -414,7 +428,7 @@
             </p>
             <p class="cardParaLabel">Brief:</p>
             <p class="cardParagraph">
-              This calculater App was an assignment when studing web development
+              This calculator App was an assignment when studing web development
               with
             </p>
             <a
@@ -452,7 +466,7 @@
             >
             <p class="cardParaLabel">Project:</p>
             <p class="cardParagraph">
-              An app to calculate how many coins will fit in a certian space.
+              An app to calculate how many coins will fit in a certain space.
             </p>
             <p class="cardParaLabel">Tech:</p>
             <p class="cardParagraph">
@@ -469,73 +483,17 @@
             </p>
             <p class="cardParaLabel">Brief:</p>
             <p class="cardParagraph">
-              I was quirous one day so I created this app to practice my
+              I was curious one day so I created this app to practice my
               JavaScript coding.
             </p>
           </div>
         </div>
       </section>
-      <section id="development" class="developmentProcess">
-        <h2 class="projectsHeader">5 Steps of Website Development</h2>
-        <div class="developmentProjects">
-          <div class="cards developmentCard">
-            <h3 class="developmenth3">1.</h3>
-            <p class="cardParaLabel">Discovery</p>
-            <p class="cardParagraph">
-              During this phase, I will work with clients to determine the
-              project scope, objectives, and requirements. This includes
-              gathering information about the target audience and their needs.
-            </p>
-          </div>
 
-          <div class="cards developmentCard">
-            <h3 class="developmenth3">2.</h3>
-            <p class="cardParaLabel">Design</p>
-            <p class="cardParagraph">
-              In this phase, I will create wire frames and design mock-ups to
-              visualize your websites layout and user interface. You will have
-              the opportunity to provide feedback and make revisions.
-            </p>
-          </div>
-
-          <div class="cards developmentCard">
-            <h3 class="developmenth3">3.</h3>
-            <p class="cardParaLabel">Development</p>
-            <p class="cardParagraph">
-              During the development phase, the websites features and
-              functionality are created using coding languages and web
-              development frameworks. The website will be tested for usability
-              and compatibility.
-            </p>
-          </div>
-
-          <div class="cards developmentCard">
-            <h3 class="developmenth3">4.</h3>
-            <p class="cardParaLabel">Deliver</p>
-            <p class="cardParagraph">
-              Once your website is ready, it will be launched and made available
-              to the public. I will ensure that your website is optimized for
-              search engines and that all necessary analytics and tracking tools
-              are in place.
-            </p>
-          </div>
-
-          <div class="cards developmentCard">
-            <h3 class="developmenth3">5.</h3>
-            <p class="cardParaLabel">Depend</p>
-            <p class="cardParagraph">
-              After launch, I will provide ongoing maintenance and support to
-              ensure your website remains functional and up-to-date. This
-              includes fixing bugs, updating content, providing security
-              measures, and providing you with technical support.
-            </p>
-          </div>
-        </div>
-      </section>
       <section id="about" class="aboutMe">
         <h2 class="projectsHeader">About me</h2>
         <div class="projects">
-          <a title="The Developer" class="socialMediaLink" href="#">
+          <div title="The Developer" class="socialMediaLink">
             <div class="cards aboutCard">
               <h3>The Developer</h3>
               <p class="aboutParagraph">
@@ -581,8 +539,8 @@
               </p>
               <br />
             </div>
-          </a>
-          <a title="The Developer" class="socialMediaLink" href="#">
+          </div>
+          <div title="The Developer" class="socialMediaLink">
             <div class="cards aboutCard">
               <h3>The Person</h3>
               <p class="aboutParagraph">
@@ -651,7 +609,7 @@
               </p>
               <br />
             </div>
-          </a>
+          </div>
         </div>
       </section>
     </main>
