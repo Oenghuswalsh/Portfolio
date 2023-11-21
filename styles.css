@@ -260,6 +260,7 @@ main {
   padding: 25px;
   overflow: auto;
   cursor: s-resize;
+  margin-bottom: 5em;
 }
 
 .aboutMe h3 {
@@ -388,7 +389,7 @@ footer p {
     height: auto;
   }
   .logo {
-    margin: 5px;
+    margin: 5px 5px 5px 20px;
   }
   main {
     padding: 0;
