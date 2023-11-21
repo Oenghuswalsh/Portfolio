@@ -253,11 +253,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  width: 490px;
   height: 500px;
   border-radius: 50px 0 50px 0;
   background-color: rgb(0, 117, 255, 11%);
-  padding: 5px;
+  padding: 25px;
   overflow: auto;
   cursor: s-resize;
 }
