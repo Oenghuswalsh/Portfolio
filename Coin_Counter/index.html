@@ -62,9 +62,8 @@
           id="bedroomVolume"
           style="display: none"
         >
-          <form action="" method="post" id="MyForm">
-            <label for="length, width, height">The Size of My Bedroom is</label
-            ><br />
+          <p>The Size of My Bedroom is</p>
+          <form method="post" id="MyForm">
             <input
               class="roomsize"
               id="length"
@@ -100,7 +99,7 @@
           <a class="resetButton" href="index.html">Reset</a>
         </div>
         <div class="grid--item" id="coinVolumn" style="display: none">
-          <form id="myCoin">
+          <form>
             <span>Bedroom size is L= </span><span id="roomLength"></span
             ><span>m</span><span> * W= </span><span id="roomWidth"></span
             ><span>m</span><span> * H= </span><span id="roomHeight"></span
@@ -110,11 +109,10 @@
           </form>
 
           <!--Input coin selection-->
-          <div id="coinSelection">
-            <form id="myCoin">
-              <label class="coinSelection" for="coin">Select a Coin</label
-              ><br />
-              <select class="coinSelection" id="coin">
+          <div>
+            <form>
+              <label for="coin">Select a Coin</label><br />
+              <select id="coin">
                 <option value="0">Select a coin</option>
                 <option value="1">5cents</option>
                 <option value="2">10cents</option>
@@ -183,9 +181,8 @@
           <!--Input coin selection-->
           <div id="coinSelection">
             <form id="myMoney">
-              <label class="coinSelection" for="coinSel">Select a Coin</label
-              ><br />
-              <select class="coinSelection" id="coinSel">
+              <label for="coinSel">Select a Coin</label><br />
+              <select id="coinSel">
                 <option value="0">Select a coin</option>
                 <option value="1">5cents</option>
                 <option value="2">10cents</option>

@@ -8,17 +8,30 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <form class="formContact submitForm" action="https://formspree.io/f/xayvdwwa" method="POST">
+    <form
+      class="formContact submitForm"
+      action="https://formspree.io/f/xayvdwwa"
+      method="POST"
+    >
       <h2>Contact Oenghus Walsh</h2>
       <div class="formGroup">
         <label for="name">Name</label>
-        <input required title="name" class="formControl" type="text" name="name" autofocus />
+        <input
+          required
+          title="name"
+          class="formControl"
+          type="text"
+          id="name"
+          name="name"
+          autofocus
+        />
       </div>
       <div class="formGroup">
         <label for="email">Email</label>
         <input
           class="formControl"
           type="email"
+          id="email"
           name="email"
           title="Email address"
           required
@@ -28,21 +41,39 @@
       </div>
       <div class="formGroup">
         <label for="phone">Phone</label>
-        <input class="formControl" type="phone" name="phone" title="Phone" />
+        <input
+          class="formControl"
+          type="tel"
+          id="phone"
+          name="phone"
+          title="Phone"
+        />
       </div>
       <div class="formGroup">
         <label for="message">Write your message here.</label>
-          <textarea required class="formControl rows="6" name="message" title="message" >Hi Oenghus, I love your portfolio and would like to connect for a chat!</textarea>
-        </div>
+        <textarea
+          required
+          class="formControl"
+          id="message"
+          name="message"
+          rows="6"
+          title="message"
+        >
+Hi Oenghus, I love your portfolio and would like to connect for a chat!</textarea
+        >
+      </div>
       <button class="smButton" type="submit">Send</button>
       <button class="smButton" type="reset">Clear</button>
       <div class="contactDetails">
         <p class="contactParaLabel">Email</p>
-        <p class="contactInfo">oenghuswalsh@gmail.com</p><br>
+        <p class="contactInfo">oenghuswalsh@gmail.com</p>
+        <br />
         <p class="contactParaLabel">LinkedIn</p>
-        <p class="contactInfo">https://www.linkedin.com/in/oenghuswalsh</p><br>
+        <p class="contactInfo">https://www.linkedin.com/in/oenghuswalsh</p>
+        <br />
         <p class="contactParaLabel">GitHub</p>
-        <p class="contactInfo">https://github.com/Oenghuswalsh</p><br>
+        <p class="contactInfo">https://github.com/Oenghuswalsh</p>
+        <br />
       </div>
     </form>
   </body>
