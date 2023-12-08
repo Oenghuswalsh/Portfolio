@@ -20,12 +20,18 @@
   <body>
     <button
       onclick="topFunction()"
-      class="navButton"
+      class="navButton arrow_A"
       id="BackToTopButton"
       title="Go to top"
     >
       <i class="fa-solid fa-arrow-up-long"></i>
     </button>
+
+    <div id="arrowsBody">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </div>
     <header>
       <div class="headerBlock">
         <a href="index.html">
@@ -50,7 +56,7 @@
         <div class="socialMedia">
           <a
             title="Linkedin"
-            class="socialMediaLink"
+            class="socialMediaLink mediaLinkHL"
             href="https://www.linkedin.com/in/oenghuswalsh"
           >
             <i class="fa-brands fa-linkedin fa-3x"></i>
@@ -89,7 +95,7 @@
           </div>
           <img
             class="bannerImage"
-            src="Portfolio_images/Resized/Portrait.png"
+            src="Portfolio_images/Resized/NeonWolf.jpg"
             alt=""
           />
         </div>
@@ -134,7 +140,6 @@
           <div class="cards websiteCard">
             <a
               title="GitHub Page"
-              class="socialMediaLink"
               href="https://oenghuswalsh.github.io/Local_Pets/"
             >
               <img
@@ -171,7 +176,6 @@
           <div class="cards websiteCard">
             <a
               title="GitHub Page"
-              class="socialMediaLink"
               href="https://oenghuswalsh.github.io/moshify/"
             >
               <img
@@ -261,11 +265,7 @@
         <div class="projects websites">
           <!-- 1 First App card in App section-->
           <div class="cards websiteCard">
-            <a
-              title="Simple App"
-              class="socialMediaLink"
-              href="Silly_story/index.html"
-            >
+            <a title="Simple App" href="Silly_story/index.html">
               <img
                 class="cardImage"
                 src="Portfolio_images/Resized/Silly_Story_Generator.png"
@@ -295,11 +295,7 @@
           </div>
           <!-- 2 Seccond App card in App section-->
           <div class="cards websiteCard">
-            <a
-              title="Simple App"
-              class="socialMediaLink"
-              href="Calculator/index.html"
-            >
+            <a title="Simple App" href="Calculator/index.html">
               <img
                 class="cardImage"
                 src="Portfolio_images/Resized/Calculator_app.png"
@@ -330,11 +326,7 @@
           </div>
           <!-- 3 Third App card in App section-->
           <div class="cards websiteCard">
-            <a
-              title="Simple App"
-              class="socialMediaLink"
-              href="Coin_Counter/index.html"
-            >
+            <a title="Simple App" href="Coin_Counter/index.html">
               <img
                 class="cardImage"
                 src="Portfolio_images/Resized/Coin_counter.png"
@@ -368,11 +360,11 @@
         </div>
       </section>
 
-      <section id="about" class="aboutMe">
-        <h2 class="projectsHeader">About me</h2>
+      <section id="about" class="banner aboutMe">
+        <h2 class="aboutHeader">About me</h2>
         <div class="projects">
           <div title="The Developer">
-            <div class="cards aboutCard">
+            <div class="aboutCard">
               <h3>Oenghus Walsh Web Developer</h3>
               <p class="aboutParagraph">
                 I am a dedicated and passionate individual with a keen interest
@@ -419,6 +411,7 @@
             </div>
           </div>
         </div>
+        <div class="reveal"></div>
       </section>
     </main>
     <footer>

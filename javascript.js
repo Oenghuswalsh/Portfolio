@@ -62,10 +62,11 @@ function openAppWindow(url) {
     `width=${popupWidth}, height=${popupHeight}, left=${centerX}, top=${centerY}`
   );
 }
-// Get the button
-let mybutton = document.getElementById("BackToTopButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
+let mybutton = document.getElementById("BackToTopButton");
+let uparrow = document.getElementById("arrowsBody");
+
+// When the user scrolls down 200px from the top of the document, show the button and  show the pulsing arrow
 window.onscroll = function () {
   scrollFunction();
 };
@@ -76,8 +77,10 @@ function scrollFunction() {
     document.documentElement.scrollTop > 200
   ) {
     mybutton.style.display = "block";
+    uparrow.style.display = "flex";
   } else {
     mybutton.style.display = "none";
+    uparrow.style.display = "none";
   }
 }
 
